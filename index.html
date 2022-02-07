@@ -4,49 +4,65 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
     <title>Authentic Gainz - Cultivating Authentic Gainz for all</title>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td colspan="5">
-                <a href="index.html">
-                    <img src="images/ag_logo.jpg" alt="Authentic Gainz Logo" width="250" height="150">
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="pages/estore.html">e-store</a></td>
-            <td><a href="pages/products.html">Products</a></td>
-            <td><a href="pages/yourgym.html">Your Gym</a></td>
-            <td><a href="pages/about.html">About Us</a></td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <h3>Welcome to Authentic Gainz - Cultivating Authentic Gainz for all</h3>
+    <header>
+        <div id="logo_background">
+            <div id="logo"><a href="index.html">
+                    <img src="images/ag_logo1.jpg" alt="Authentic Gainz Logo" width="250" height="177">
+                </a></div>
+        </div>
+        <nav id="main_menu">
+            <ul id="main_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/estore.html">e-store</a></li>
+                <li><a href="pages/products.html">Products</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="pages/catalog.html">Product Catalog</a></li>
+                            <li><a href="pages/featured.html">Product Features</a></li>
+                        </ul>
+                    </div>
+                <li><a href="pages/yourgym.html">Your Gym</a></li>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="pages/links.html">Useful Links</a></li>
+                    </ul>
+                </div>
+                <li><a href="pages/about.html">About Us</a></li>
+                <!--
+            <div class="submenu"><ul>
+                    <li><a href="pages/vision.html">Our Vision</a></li>
+                </ul>
+                </div>
+-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h3>Welcome to Authentic Gainz - Cultivating Authentic Gainz for all</h3>
 
-                <p>It looks like you are ready to make a real difference in your life right now and
-                    we are right there with you! Authentic Gainz is one of the younger companies, but
-                    what we lack in years of service, we make up for with our research and development.
-                    We found that those affected by the 2019 pandemic are more inclined to set up shop
-                    at home rather than depend on the fluctuating certainty of gyms being available.
-                    Authentic Gainz would like to help you along your journey by providing the items
-                    you want, at a price that's affordable.</p>
-            </td>
-            <td colspan="2">
-                <img src="images/home_gym.jpg" alt="Home Gym" width="256" height="256">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                Authentic Gainz &copy; 2021 - 2022
-            </td>
-            <td><a href="pages/contact.html">Contact Us</a></td>
-            <td><a href="pages/sitemap.html">Site Map</a></td>
-        </tr>
-    </table>
-</body>
-
-</html>
+            <p>It looks like you are ready to make a real difference in your life right now and
+                we are right there with you! Authentic Gainz is one of the younger companies, but
+                what we lack in years of service, we make up for with our research and development.
+                We found that those affected by the 2019 pandemic are more inclined to set up shop
+                at home rather than depend on the fluctuating certainty of gyms being available.
+                Authentic Gainz would like to help you along your journey by providing the items
+                you want, at a price that's affordable.</p>
+        </article>
+    </main>
+    <div id="image">
+        <img src="images/home_gym.jpg" alt="Home Gym" width="256" height="256">
+    </div>
+    <footer>
+        <ul>
+            <li> Authentic Gainz &copy; 2021 - 2022</li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="pages/sitemap.html">Site Map</a></li>
+        </ul>
+    </footer>
+</body></html>
