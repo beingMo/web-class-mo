@@ -42,7 +42,10 @@ nav ul li {
     background-color: #FD3003;
     display: none;
 }
-
+.submenu a:hover {
+    display: block;
+}
+    
 ul#main_links li:last-child {
     border-right-width: 0;
     width: 176px;
