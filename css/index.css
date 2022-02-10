@@ -1,10 +1,16 @@
 /* index.css */
 
+/********************************************************
+removes browser defaults
+********************************************************/
 * {
     padding: 0;
     margin: 0;
 }
 
+/*********************************************************
+body styles
+*********************************************************/
 body {
     width: 900px;
     margin: 20px auto 0 auto;
@@ -13,12 +19,20 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
+
+/********************************************
+logo styles
+********************************************/
+div#logo {
+    padding: 5px 0 0 5px;
+}
 #logo_background {
     background-color: #000;
 }
 
-/* nav styles */
-
+/********************************************
+nav styles
+********************************************/
 #main_menu ul {
     list-style: none;
     position: relative;
@@ -52,39 +66,20 @@ body {
     display: block;
     clear: both;
 }
+
 /********************************************
 look at this
 ********************************************/
-h3 {
+h3.main_content {
     clear: left;
     margin: 1.5em 0 .5em;
 }
-p {
+p.main_content {
     margin: 0 .2em .7em 0;
 }
 
 /********************************************
-
-********************************************/
-div#logo {
-    padding: 5px 0 0 5px;
-}
-/********************************************
-look at this
-********************************************/
-article {
-    float: left;
-    width: 63%;
-    margin-left: 1em;
-}
-div#image {
-    float: left;
-    width: 33%;
-    margin: 20px 0 10px;
-    text-align: center;
-}
-/********************************************
-
+footer styles
 ********************************************/
 footer {
     clear: left;
@@ -116,4 +111,29 @@ footer li:nth-child(1) {
 }
 footer li:nth-child(2) {
     width: 150px;
+}
+
+/****************************************************
+page-specific styles
+********************************************
+/********************************************
+homepage styles
+********************************************/
+article#text_left {
+    float: left;
+    width: 63%;
+    margin-left: 1em;
+}
+div#image_right {
+    float: left;
+    width: 33%;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+/********************************************
+coming soon pages styles
+********************************************/
+h1.coming_soon {
+    margin-left: 30%;
+    padding: 1em;
 }
