@@ -25,11 +25,11 @@
 
 Product:
 -Racks & Benches
-	-AG Basic Rack
-	-AG Cage Rack
+	-AG Power Rack
+	-AG Squat Rack
 	-AG Wall Mount
-	-Weight Bench Set
-	-Utility Bench
+	-Westside Bench
+	-Incline Bench
 	-Flat Bench
 -Rack Attachments
 	-Lateral Pulldown
@@ -54,6 +54,10 @@ Product:
 	-Pulldown Bar (Short)
 	-Fitness Chain
 	-Landmine Handle
+    
+    -Lat Pulldown Seat
+    -J Cup
+    -Spotter Arms
 
 
 Contact Us													
