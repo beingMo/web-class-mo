@@ -137,3 +137,12 @@ h1.coming_soon {
     margin-left: 30%;
     padding: 1em;
 }
+/********************************************
+catalog pages styles
+********************************************/
+main.catalog {
+    padding: 1em;
+}
+p.attachment_price {
+    padding-bottom: 0;
+}
