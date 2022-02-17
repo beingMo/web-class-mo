@@ -18,11 +18,11 @@
                 <table>
                     <tr>
                         <td><input id="power_rack" type="radio" name="racks"></td>
-                        <td><label for="power_rack">AG Power Rack<br><img src="images/power_rack.png" alt="AG Power Rack" height="150" width="200"></label><br>$1,215.00</td>
+                        <td><label for="power_rack">AG Power Rack<br><img src="images/power_rack.png" alt="AG Power Rack" height="150" width="200"></label><p id="powerrack_price">$1215.00</p><p id="powerrack_tax">$0.00</p></td>
                         <td><input id="wall_mount" type="radio" name="racks"></td>
-                        <td><label for="wall_mount">AG Wall Mount<br><img src="images/wall_mount.png" alt="AG Wall Mount" height="150" width="200"><br>$600.00</label></td>
+                        <td><label for="wall_mount">AG Wall Mount<br><img src="images/wall_mount.png" alt="AG Wall Mount" height="150" width="200"></label><p id="wallmount_price">$600.00</p><p id="wallmount_tax">$0.00</p></td>
                         <td><input id="squat_rack" type="radio" name="racks"></td>
-                        <td><label for="squat_rack">AG Squat Rack<br><img src="images/squat_rack.png" alt="AG Wall Mount" height="150" width="200"><br>$535.00</label></td>
+                        <td><label for="squat_rack">AG Squat Rack<br><img src="images/squat_rack.png" alt="AG Squat Rack" height="150" width="200"></label><p id="squatrack_price">$535.00</p><p id="squatrack_tax">$0.00</p></td>
                     </tr>
                 </table>
             </fieldset>
@@ -31,11 +31,11 @@
                 <table>
                     <tr>
                         <td><input id="westside_bench" type="radio" name="benches"></td>
-                        <td><label for="westside_bench">Westside Bench<br><img src="images/westside_bench.png" alt="Westside Bench" height="150" width="200"><br>$825.00</label></td>
+                        <td><label for="westside_bench">Westside Bench<br><img src="images/westside_bench.png" alt="Westside Bench" height="150" width="200"></label><p id="westsidebench_price">$825.00</p><p id="westsidebench_tax">$0.00</p></td>
                         <td><input id="incline_bench" type="radio" name="benches"></td>
-                        <td><label for="incline_bench">Incline Bench<br><img src="images/incline_bench.png" alt="Incline Bench" height="150" width="200"><br>$595.00</label></td>
+                        <td><label for="incline_bench">Incline Bench<br><img src="images/incline_bench.png" alt="Incline Bench" height="150" width="200"></label><p id="inclinebench_price">$595.00</p><p id="inclinebench_tax">$0.00</p></td>
                         <td><input id="flat_bench" type="radio" name="benches"></td>
-                        <td><label for="flat_bench">Flat Bench<br><img src="images/flat_bench.png" alt="Flat Bench" height="150" width="200"><br>$210.00</label></td>
+                        <td><label for="flat_bench">Flat Bench<br><img src="images/flat_bench.png" alt="Flat Bench" height="150" width="200"></label><p id="flatbench_price">$210.00</p><p id="flatbench_tax">$0.00</p></td>
                     </tr>
                 </table>
             </fieldset>
@@ -44,28 +44,28 @@
                 <table>
                     <tr>
                         <td><input id="land_mine" type="checkbox" name="attachments" value="yes"></td>
-                        <td><label for="land_mine">Land Mine<br><img src="images/land_mine.png" alt="Land Mine" height="150" width="200"></label><p id="landmine_price" class="attachment_price">$140.00</p><select id="landmine_qty"><option>0</option>
+                        <td><label for="land_mine">Land Mine<br><img src="images/land_mine.png" alt="Land Mine" height="150" width="200"></label><p id="landmine_price" class="attachment_price">$140.00</p><p id="landmine_tax">$0.00</p><select id="landmine_qty"><option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option></select></td>
                         <td><input id="dip_bar" type="checkbox" name="attachments" value="yes"></td>
-                        <td><label for="dip_bar">Dip Bar<br><img src="images/dip_bar.png" alt="Dip Bar" height="150" width="200"></label><p id="dipbar_price" class="attachment_price">$105.00</p><select id="dipbar_qty"><option>0</option>
+                        <td><label for="dip_bar">Dip Bar<br><img src="images/dip_bar.png" alt="Dip Bar" height="150" width="200"></label><p id="dipbar_price" class="attachment_price">$105.00</p><p id="dipbar_tax">$0.00</p><select id="dipbar_qty"><option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option></select></td>
                         <td><input id="lat_pulldown_seat" type="checkbox" name="attachments" value="yes"></td>
-                        <td><label for="lat_pulldown_seat">Lateral Pulldown Seat<br><img src="images/lat_pulldown_seat.png" alt="Lateral Pulldown Seat" height="150" width="200"></label><p id="latpulldown_price" class="attachment_price">$310.00</p><select id="latpulldown_qty"><option>0</option>
+                        <td><label for="lat_pulldown_seat">Lateral Pulldown Seat<br><img src="images/lat_pulldown_seat.png" alt="Lateral Pulldown Seat" height="150" width="200"></label><p id="latpulldown_price" class="attachment_price">$310.00</p><p id="latpulldown_tax">$0.00</p><select id="latpulldown_qty"><option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option></select></td>
                         <td><input id="plate_holder" type="checkbox" name="attachments" value="yes"></td>
-                        <td><label for="plate_holder">Plate Holder<br><img src="images/plate_holder.png" alt="Plate Holder" height="150" width="200"></label><p id="plateholder_price" class="attachment_price">$65.00</p><select id="plateholder_qty"><option>0</option>
+                        <td><label for="plate_holder">Plate Holder<br><img src="images/plate_holder.png" alt="Plate Holder" height="150" width="200"></label><p id="plateholder_price" class="attachment_price">$65.00</p><p id="plateholder_tax">$0.00</p><select id="plateholder_qty"><option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -74,7 +74,7 @@
                     </tr>
                     <tr>
                         <td><input id="j_cup" type="checkbox" name="attachments" value="yes"></td>
-                        <td><label for="j_cup">J Cup<br><img src="images/jcup_pairs.png" alt="J Cup" height="150" width="200"></label><p id="jcup_price" class="attachment_price">$139.00</p><select id="jcup_qty"><option>0</option>
+                        <td><label for="j_cup">J Cup<br><img src="images/jcup_pairs.png" alt="J Cup" height="150" width="200"></label><p id="jcup_price" class="attachment_price">$139.00</p><p id="jcup_tax">$0.00</p><select id="jcup_qty"><option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -82,7 +82,7 @@
                             <option>5</option></select></td>
                         <td><input id="spotter_arms" type="checkbox" name="attachments" value="yes"></td>
                         <td><label for="spotter_arms">Spotter Arms<br><img src="images/spotter_arms.png" alt="Spotter Arms" height="150" width="200">
-                            </label><p id="spotter_price" class="attachment_price">$155.00</p><select id="spotter_qty"><option>0</option>
+                            </label><p id="spotterarms_price" class="attachment_price">$155.00</p><p id="spotterarms_tax">$0.00</p><select id="spotterarms_qty"><option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
