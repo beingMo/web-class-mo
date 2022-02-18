@@ -14,9 +14,9 @@
         <h4 class="Centered">AG Catalog</h4>
         <p>Please select your gym items starting with a particular rack, next choose a bench and finally supplement with any number of attachments you would like!</p>
         <form id="order_form">
+            <p id="rack_error" class="orderForm_error_message">&nbsp;</p>
             <fieldset>
                 <legend>Racks</legend>
-                <p id="rack_error" class="orderForm_error_message">&nbsp;</p>
                 <table>
                     <tr>
                         <td><input id="power_rack" type="radio" name="racks" value="AG Power Rack"></td>
@@ -29,8 +29,8 @@
                 </table>
             </fieldset>
             <fieldset>
-                <legend>Benches</legend>
                 <p id="bench_error" class="orderForm_error_message">&nbsp;</p>
+                <legend>Benches</legend>
                 <table>
                     <tr>
                         <td><input id="westside_bench" type="radio" name="benches" value="Westside Bench"></td>
