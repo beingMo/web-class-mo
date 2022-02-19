@@ -9,7 +9,7 @@
         <!--#include virtual="../common/document_logo.html"-->
         <!--#include virtual="../common/document_mainmenu.html"-->
         <script src="scripts/orderform_validate.js"></script>
-        <script src="scripts/calculate_order.js"></script>
+        <script src="../scripts/calculate_order.js"></script>
     </header>
     <main class="catalog">
         <h4 class="Centered">AG Catalog</h4>
@@ -100,7 +100,7 @@
                 <legend>Processing</legend>
                 <table>
                     <tr>
-                        <td><input type="button" value="Buy Now!" onclick="calculate_order()"></td>
+                        <td><input type="button" value="Buy Now!" onclick="processOrder()"></td>
                         <td><input type="reset" value="Start Over"></td>
                     </tr>
                 </table>
