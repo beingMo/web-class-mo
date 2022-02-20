@@ -7,15 +7,20 @@ functions to perform validations
 var racks = document.getElementsByName("racks");
 var benches = document.getElementsByName("benches");
 var attachments = document.getElementsByName("attachments");
+var titles = [];
 var prices = [];
 
 function processOrder() {
-    findSelectedBench();
     findSelectedRack();
+    findSelectedBench();
     findSelectedAttachments();
-    
+
     var total = calculateTotal();
     //console.log(total);
+    console.dir(titles);
+    console.dir(prices);
+
+    //document.location.href = 'order_confirmation.html';
 }
 
 function findSelectedRack() {
@@ -29,8 +34,9 @@ function findSelectedRack() {
     var index = item.search(/\d/);
     var title = item.slice(0, index);
     var price = item.slice(index);
-    
+
     prices.push(price);
+    titles.push(title);
 
     //console.log(item);
     //console.log(title);
@@ -48,8 +54,9 @@ function findSelectedBench() {
     var index = item.search(/\d/);
     var title = item.slice(0, index);
     var price = item.slice(index);
-    
+
     prices.push(price);
+    titles.push(title);
 
     //console.log(item);
     //console.log(title);
@@ -69,31 +76,42 @@ function findSelectedAttachments() {
         if (attachments[i].checked) {
             singleItem = attachments[i].value;
             priceStart = singleItem.search(firstWord);
+            this.titles.push(singleItem.slice(0, priceStart).trim());
             titles.push(singleItem.slice(0, priceStart).trim());
             secondWord = singleItem.search(firstDigit);
             this.prices.push(singleItem.slice(priceStart, secondWord).trim());
+            prices.push(singleItem.slice(priceStart, secondWord).trim());
             ids.push(singleItem.slice(secondWord));
         }
     }
-    //console.dir(titles);
+    //console.dir(this.titles);
     //console.dir(this.prices);
     //console.dir(ids);
 }
 
-function calculateSubtotal(prices){
+function calculateSubtotal(prices) {
     var subtotal = 0;
-    
-    for(var i = 0; i < prices.length; i++){
+
+    for (var i = 0; i < prices.length; i++) {
         subtotal += parseFloat(prices[i]);
     }
     return subtotal;
 }
 
-function calculateTotal(){
-    
+function calculateTotal() {
+
     var subtotal = calculateSubtotal(prices);
     var tax = .07;
     var total = (subtotal * tax) + subtotal;
-    
+
     return total;
+}
+
+function showSummary() {
+    var priceColumn = document.getElementById("priceColumn");
+    var titleColumn = document.getElementById("titleColumn");
+    
+    for(var i = 0; i < titles.length; i++){
+           
+    }
 }
