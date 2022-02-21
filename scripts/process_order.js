@@ -16,7 +16,7 @@ function processOrder() {
         addSelectedBench();
         addSelectedAttachments();
 
-        var total = calculateTotal();
+        //var total = calculateTotal();
         //console.log(total);
         //console.dir(titles);
         //console.dir(prices);
@@ -119,17 +119,19 @@ function showSummary() {
         titleColumn = titleColumn.concat(titles[i] + '<br>');
         //titleColumn = titleColumn.concat('<tr>' + titles[i] + '</tr>');
     }
-    console.log(titleColumn);
+    //console.log(titleColumn);
     for (var i = 0; i < prices.length; i++) {
         priceColumn = priceColumn.concat(prices[i], '<br>');
         //priceColumn = priceColumn.concat('<tr>' + prices[i] + '</tr>');
     }
-    console.log(priceColumn);
-
+    //console.log(priceColumn);
+    var total = calculateTotal();
+    
+    sessionStorage.setItem("total", total);
     sessionStorage.setItem("priceColumn", priceColumn);
     sessionStorage.setItem("titleColumn", titleColumn);
 
-    location.href = "order_confirmation.html";
+    location.href = "pages/order_confirmation.html";
     //document.getElementById("priceColumn").innerHTML = priceColumn;
     //document.getElementById("titleColumn").innerHTML = titleColumn;
 }
