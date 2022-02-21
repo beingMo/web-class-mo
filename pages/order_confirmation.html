@@ -4,16 +4,41 @@
 <title>Authentic Gainz - Cultivating Authentic Gainz for all</title>
 </head>
 
-<body>
+<body onload="showSummary()">
     <header>
         <!--#include virtual="../common/document_logo.html"-->
         <!--#include virtual="../common/document_mainmenu.html"-->
+        
+        <script>
+            function showSummary() {
+                var priceColumn = sessionStorage.getItem("priceColumn");
+                var titleColumn = sessionStorage.getItem("titleColumn");
+
+                console.log(priceColumn);
+                console.log(titleColumn);
+                document.getElementById("priceColumn").innerHTML = priceColumn;
+                document.getElementById("titleColumn").innerHTML = titleColumn;
+
+                sessionStorage.removeItem("priceColumn");
+                sessionStorage.removeItem("titleColumn");
+                sessionStorage.clear();
+            }
+
+        </script>
+
     </header>
     <main>
-            <h1 class="coming_soon">Order Summary</h1>
+        <h1 class="coming_soon">Order Summary</h1>
         <p id="orderSummary"></p>
+        <table>
+            <td id="titleColumn"></td>
+            <td id="priceColumn"></td>
+        </table>
+            
+            <!--
         <div id="titleColumn"></div>
         <div id="priceColumn"></div>
+-->
     </main>
     <footer>
         <!--#include virtual="../common/document_footer.html"-->
