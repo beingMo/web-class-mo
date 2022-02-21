@@ -131,7 +131,7 @@ function showSummary() {
     sessionStorage.setItem("priceColumn", priceColumn);
     sessionStorage.setItem("titleColumn", titleColumn);
 
-    location.href = "pages/order_confirmation.html";
+    location.href = "pages/order_confirmation";
     //document.getElementById("priceColumn").innerHTML = priceColumn;
     //document.getElementById("titleColumn").innerHTML = titleColumn;
 }
