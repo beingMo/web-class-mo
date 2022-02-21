@@ -11,20 +11,22 @@ var titles = [];
 var prices = [];
 
 function processOrder() {
-    findSelectedRack();
-    findSelectedBench();
-    findSelectedAttachments();
+    if (orderFormValidate()) {
+        addSelectedRack();
+        addSelectedBench();
+        addSelectedAttachments();
 
-    var total = calculateTotal();
-    //console.log(total);
-    //console.dir(titles);
-    //console.dir(prices);
+        var total = calculateTotal();
+        //console.log(total);
+        //console.dir(titles);
+        //console.dir(prices);
 
-    showSummary();
-    //document.location.href = 'order_confirmation.html';
+        showSummary();
+        //document.location.href = 'order_confirmation.html';  
+    }
 }
 
-function findSelectedRack() {
+function addSelectedRack() {
     var item;
 
     for (var i = 0; i < racks.length; i++) {
@@ -44,7 +46,7 @@ function findSelectedRack() {
     //console.log(price);
 }
 
-function findSelectedBench() {
+function addSelectedBench() {
     var item;
 
     for (var i = 0; i < benches.length; i++) {
@@ -64,7 +66,7 @@ function findSelectedBench() {
     //console.log(price);
 }
 
-function findSelectedAttachments() {
+function addSelectedAttachments() {
     var singleItem;
     var titles = [];
     var prices = [];

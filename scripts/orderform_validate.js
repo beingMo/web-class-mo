@@ -17,7 +17,7 @@ function orderFormValidate() {
 
     findSelectedBench();
     findSelectedRack();
-
+    
     return isChecked;
 }
 
