@@ -114,12 +114,13 @@ function showSummary() {
     var titleColumn = "";
 
     for (var i = 0; i < titles.length; i++) {
-        //titleColumn = titleColumn.concat(titles[i], '/n');
         titleColumn = titleColumn.concat(titles[i] + '<br>');
+        //titleColumn = titleColumn.concat('<tr>' + titles[i] + '</tr>');
     }
     console.log(titleColumn);
     for (var i = 0; i < prices.length; i++) {
         priceColumn = priceColumn.concat(prices[i], '<br>');
+        //priceColumn = priceColumn.concat('<tr>' + prices[i] + '</tr>');
     }
     console.log(priceColumn);
 
