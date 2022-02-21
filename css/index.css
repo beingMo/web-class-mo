@@ -26,6 +26,7 @@ logo styles
 div#logo {
     padding: 5px 0 0 5px;
 }
+
 #logo_background {
     background-color: #000;
 }
@@ -37,6 +38,7 @@ nav styles
     list-style: none;
     position: relative;
 }
+
 #main_menu ul li {
     float: left;
     width: 179px;
@@ -46,21 +48,26 @@ nav styles
     background-color: #FD3003;
     text-align: center;
 }
+
 #main_menu ul li a {
     text-decoration: none;
     color: #fff;
 }
+
 #main_menu ul ul {
     display: none;
     position: absolute;
     top: 100%;
 }
+
 #main_menu ul ul li {
     float: none;
 }
+
 #main_menu ul li:hover > ul {
     display: block;
 }
+
 #main_menu ul::after {
     content: "";
     display: block;
@@ -74,6 +81,7 @@ h3.main_content {
     clear: left;
     margin: 1.5em 0 .5em;
 }
+
 p.main_content {
     margin: 0 .2em .7em 0;
 }
@@ -94,6 +102,7 @@ footer {
     font-weight: bold;
     font-size: .9em;
 }
+
 footer ul {
     list-style: none;
 }
@@ -101,14 +110,17 @@ footer ul {
 footer li {
     float: left;
 }
+
 footer li a {
     color: #fff;
     text-decoration: none;
 }
+
 footer li:nth-child(1) {
     width: 600px;
     text-align: center;
 }
+
 footer li:nth-child(2) {
     width: 150px;
 }
@@ -124,12 +136,14 @@ article#text_left {
     width: 63%;
     margin-left: 1em;
 }
+
 div#image_right {
     float: left;
     width: 33%;
     margin: 20px 0 10px;
     text-align: center;
 }
+
 /********************************************
 coming soon pages styles
 ********************************************/
@@ -137,15 +151,18 @@ h1.coming_soon {
     margin-left: 30%;
     padding: 1em;
 }
+
 /********************************************
 catalog page styles
 ********************************************/
 main.catalog {
     padding: 1em;
 }
+
 p.attachment_price {
     padding-bottom: 0;
 }
+
 /********************************************
 contact page styles
 ********************************************/
@@ -153,6 +170,22 @@ main#contact_page {
     padding: 1em;
 }
 
-p.orderForm_error_message {
+/********************************************
+catalog page styles
+********************************************/
+h2.orderForm_error_message {
     color: red;
+    margin: 1em 0 1em 0;
+}
+
+/********************************************
+order_confirmation page styles
+********************************************/
+table#orderSummary {
+    width: 400px;
+    margin: 0 auto 1em;
+}
+
+td#priceColumn {
+    text-align: right;
 }
