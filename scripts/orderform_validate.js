@@ -33,7 +33,7 @@ function findSelectedBench() {
         }
     }
     isChecked = false;
-    document.getElementById("bench_error").innerHTML = " **Must select an item from this category.";
+    document.getElementById("bench_error").innerHTML = " **Must select an item from this category** ";
 }
 
 //determines if any rack is selected
@@ -45,5 +45,5 @@ function findSelectedRack() {
         }
     }
     isChecked = false;
-    document.getElementById("rack_error").innerHTML = " **Must select an item from this category.";
+    document.getElementById("rack_error").innerHTML = " **Must select an item from this category** ";
 }
