@@ -8,10 +8,11 @@
     <header>
         <!--#include virtual="../common/document_logo.html"-->
         <!--#include virtual="../common/document_mainmenu.html"-->
+        <script src="scripts/contactform_validate.js"></script>
     </header>
     <main id="contact_page">
         <h4>We Want to Hear from You!</h4>
-        <form id="contact_form">
+        <form id="contactForm">
             <fieldset>
                 <legend>Racks</legend>
                 <table>
@@ -46,7 +47,8 @@
                     <tr class="comment_section">
                         <td></td>
                         <td>
-                            <p>Can You Elaborate?</p><textarea name="message" rows="6" cols="30"></textarea>
+                            <h2 id="rackCommentError" class="contactFormErrors"></h2>
+                            <p>Can You Elaborate?</p><textarea id="rackComment" name="rackComment" rows="6" cols="30"></textarea>
                         </td>
                     </tr>
 
@@ -86,7 +88,8 @@
                     <tr class="comment_section">
                         <td></td>
                         <td>
-                            <p>Can You Elaborate?</p><textarea name="message" rows="6" cols="30"></textarea>
+                            <h2 id="benchCommentError" class="contactFormErrors"></h2>
+                            <p>Can You Elaborate?</p><textarea id="benchComment" name="benchComment" rows="6" cols="30"></textarea>
                         </td>
                     </tr>
                 </table>
@@ -96,24 +99,28 @@
 
                 <table>
                     <tr>
+                        <h2 id="firstNameError" class="contactFormErrors"></h2>
                         <td>First Name:</td>
                         <td><input type="text" name="firstName" size="40"></td>
                     </tr>
                     <tr>
+                        <h2 id="lastNameError" class="contactFormErrors"></h2>
                         <td>Last Name:</td>
                         <td><input type="text" name="lastName" size="40"></td>
                     </tr>
                     <tr>
+                        <h2 id="emailError" class="contactFormErrors"></h2>
                         <td>E-mail Address:</td>
                         <td><input type="text" name="email" size="40"></td>
                     </tr>
                     <tr>
+                        <h2 id="mainCommentError" class="contactFormErrors"></h2>
                         <td>Comments:</td>
-                        <td><textarea name="message" rows="6" cols="40"></textarea></td>
+                        <td><textarea name="mainComment" rows="6" cols="40"></textarea></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Let Us Know!"></td>
-                        <td class="RightAligned"><input type="reset" value="Start Over"></td>
+                        <td><input type="button" onclick="validateContactForm()" value="Let Us Know!"></td>
+                        <td class="rightAligned"><input type="reset" value="Start Over"></td>
                     </tr>
                 </table>
             </fieldset>
