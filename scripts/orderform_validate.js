@@ -10,7 +10,7 @@ var benches = document.getElementsByName("benches");
 var isChecked;
 
 //main function
-function orderFormValidate() {
+function validateOrderForm() {
     //clears previous error message, if present
     document.getElementById("bench_error").innerHTML = "";
     document.getElementById("rack_error").innerHTML = "";

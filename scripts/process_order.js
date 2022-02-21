@@ -11,7 +11,7 @@ var titles = [];
 var prices = [];
 
 function processOrder() {
-    if (orderFormValidate()) {
+    if (validateOrderForm()) {
         addSelectedRack();
         addSelectedBench();
         addSelectedAttachments();
