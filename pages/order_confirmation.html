@@ -13,14 +13,16 @@
             function showSummary() {
                 var priceColumn = sessionStorage.getItem("priceColumn");
                 var titleColumn = sessionStorage.getItem("titleColumn");
+                var total = sessionStorage.getItem("total");
 
                 console.log(priceColumn);
                 console.log(titleColumn);
-                document.getElementById("priceColumn").innerHTML = priceColumn;
-                document.getElementById("titleColumn").innerHTML = titleColumn;
+                document.getElementById("priceColumn").innerHTML = priceColumn + total;
+                document.getElementById("titleColumn").innerHTML = titleColumn + "Total: ";
 
                 sessionStorage.removeItem("priceColumn");
                 sessionStorage.removeItem("titleColumn");
+                sessionStorage.removeItem("total");
                 sessionStorage.clear();
             }
 
@@ -29,16 +31,10 @@
     </header>
     <main>
         <h1 class="coming_soon">Order Summary</h1>
-        <p id="orderSummary"></p>
-        <table>
+        <table id="orderSummary">
             <td id="titleColumn"></td>
             <td id="priceColumn"></td>
         </table>
-            
-            <!--
-        <div id="titleColumn"></div>
-        <div id="priceColumn"></div>
--->
     </main>
     <footer>
         <!--#include virtual="../common/document_footer.html"-->
