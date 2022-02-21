@@ -17,9 +17,10 @@ function processOrder() {
 
     var total = calculateTotal();
     //console.log(total);
-    console.dir(titles);
-    console.dir(prices);
+    //console.dir(titles);
+    //console.dir(prices);
 
+    showSummary();
     //document.location.href = 'order_confirmation.html';
 }
 
@@ -108,10 +109,24 @@ function calculateTotal() {
 }
 
 function showSummary() {
-    var priceColumn = document.getElementById("priceColumn");
-    var titleColumn = document.getElementById("titleColumn");
-    
-    for(var i = 0; i < titles.length; i++){
-           
+
+    var priceColumn = "";
+    var titleColumn = "";
+
+    for (var i = 0; i < titles.length; i++) {
+        //titleColumn = titleColumn.concat(titles[i], '/n');
+        titleColumn = titleColumn.concat(titles[i] + '<br>');
     }
+    console.log(titleColumn);
+    for (var i = 0; i < prices.length; i++) {
+        priceColumn = priceColumn.concat(prices[i], '<br>');
+    }
+    console.log(priceColumn);
+
+    sessionStorage.setItem("priceColumn", priceColumn);
+    sessionStorage.setItem("titleColumn", titleColumn);
+
+    location.href = "order_confirmation.html";
+    //document.getElementById("priceColumn").innerHTML = priceColumn;
+    //document.getElementById("titleColumn").innerHTML = titleColumn;
 }
