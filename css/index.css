@@ -179,6 +179,13 @@ h2.orderForm_error_message {
 }
 
 /********************************************
+contact page styles
+********************************************/
+h2.contactFormErrors {
+    color: red;
+    margin: 1em 0;
+}
+/********************************************
 order_confirmation page styles
 ********************************************/
 table#orderSummary {
