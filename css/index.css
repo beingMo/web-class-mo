@@ -152,3 +152,7 @@ contact page styles
 main#contact_page {
     padding: 1em;
 }
+
+p.orderForm_error_message {
+    color: red;
+}
