@@ -7,13 +7,16 @@ functions to perform validations
 var orderFormObject = document.getElementById("order_form");
 var racks = document.getElementsByName("racks");
 var benches = document.getElementsByName("benches");
-var isChecked = true;
+var isChecked;
 
 //main function
 function orderFormValidate() {
     //clears previous error message, if present
     document.getElementById("bench_error").innerHTML = "";
     document.getElementById("rack_error").innerHTML = "";
+    
+    //resets isChecked to true
+    isChecked = true;
 
     findSelectedBench();
     findSelectedRack();
