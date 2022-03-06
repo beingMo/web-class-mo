@@ -62,11 +62,14 @@ nav styles
 
 #main_menu ul ul li {
   float: none;
-  background-color: #8c9cad;
+  background-color: #f87676;
+  border-top: 4px solid #fd3003;
 }
 
 #main_menu ul ul a {
-  color: fd3003;
+  color: #fd3003;
+  font-weight: bold;
+  margin-top: 2px;
 }
 
 #main_menu ul li:hover > ul {
