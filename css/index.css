@@ -4,125 +4,130 @@
 removes browser defaults
 ********************************************************/
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /*********************************************************
 body styles
 *********************************************************/
 body {
-    width: 900px;
-    margin: 20px auto 0 auto;
-    border: 8px solid black;
-    border-radius: 25px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 1em;
+  width: 900px;
+  margin: 20px auto 0 auto;
+  border: 8px solid black;
+  border-radius: 25px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 /********************************************
 logo styles
 ********************************************/
 div#logo {
-    padding: 5px 0 0 5px;
+  padding: 5px 0 0 5px;
 }
 
 #logo_background {
-    background-color: #000;
+  background-color: #000;
 }
 
 /********************************************
 nav styles
 ********************************************/
 #main_menu ul {
-    list-style: none;
-    position: relative;
+  list-style: none;
+  position: relative;
 }
 
 #main_menu ul li {
-    float: left;
-    width: 179px;
-    height: 25px;
-    line-height: 25px;
-    border-right: 1px solid #000;
-    background-color: #FD3003;
-    text-align: center;
+  float: left;
+  width: 179px;
+  height: 25px;
+  line-height: 25px;
+  border-right: 1px solid #000;
+  background-color: #fd3003;
+  text-align: center;
 }
 
 #main_menu ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 #main_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
+  display: none;
+  position: absolute;
+  top: 100%;
 }
 
 #main_menu ul ul li {
-    float: none;
+  float: none;
+  background-color: #8c9cad;
+}
+
+#main_menu ul ul a {
+  color: fd3003;
 }
 
 #main_menu ul li:hover > ul {
-    display: block;
+  display: block;
 }
 
 #main_menu ul::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /********************************************
 look at this
 ********************************************/
 h3.main_content {
-    clear: left;
-    margin: 1.5em 0 .5em;
+  clear: left;
+  margin: 1.5em 0 0.5em;
 }
 
 p.main_content {
-    margin: 0 .2em .7em 0;
+  margin: 0 0.2em 0.7em 0;
 }
 
 /********************************************
 footer styles
 ********************************************/
 footer {
-    clear: left;
-    width: 100%;
-    height: 25px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    line-height: 25px;
-    background-color: #FD3003;
-    color: #fff;
+  clear: left;
+  width: 100%;
+  height: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  line-height: 25px;
+  background-color: #fd3003;
+  color: #fff;
 
-    font-weight: bold;
-    font-size: .9em;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 footer ul {
-    list-style: none;
+  list-style: none;
 }
 
 footer li {
-    float: left;
+  float: left;
 }
 
 footer li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer li:nth-child(1) {
-    width: 600px;
-    text-align: center;
+  width: 600px;
+  text-align: center;
 }
 
 footer li:nth-child(2) {
-    width: 150px;
+  width: 150px;
 }
 
 /****************************************************
@@ -132,67 +137,67 @@ page-specific styles
 homepage styles
 ********************************************/
 article#text_left {
-    float: left;
-    width: 63%;
-    margin-left: 1em;
+  float: left;
+  width: 63%;
+  margin-left: 1em;
 }
 
 div#image_right {
-    float: left;
-    width: 33%;
-    margin: 20px 0 10px;
-    text-align: center;
+  float: left;
+  width: 33%;
+  margin: 20px 0 10px;
+  text-align: center;
 }
 
 /********************************************
 coming soon pages styles
 ********************************************/
 h1.coming_soon {
-    margin-left: 30%;
-    padding: 1em;
+  margin-left: 30%;
+  padding: 1em;
 }
 
 /********************************************
 catalog page styles
 ********************************************/
 main.catalog {
-    padding: 1em;
+  padding: 1em;
 }
 
 p.attachment_price {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 /********************************************
 contact page styles
 ********************************************/
 main#contact_page {
-    padding: 1em;
+  padding: 1em;
 }
 
 /********************************************
 catalog page styles
 ********************************************/
 h2.orderForm_error_message {
-    color: red;
-    margin: 1em 0 1em 0;
+  color: red;
+  margin: 1em 0 1em 0;
 }
 
 /********************************************
 contact page styles
 ********************************************/
 h2.contactFormErrors {
-    color: red;
-    margin: 1em 0;
+  color: red;
+  margin: 1em 0;
 }
 /********************************************
 order_confirmation page styles
 ********************************************/
 table#orderSummary {
-    width: 400px;
-    margin: 0 auto 1em;
+  width: 400px;
+  margin: 0 auto 1em;
 }
 
 td#priceColumn {
-    text-align: right;
+  text-align: right;
 }
