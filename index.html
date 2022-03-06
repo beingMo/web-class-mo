@@ -4,10 +4,11 @@
     <title>Authentic Gainz - Cultivating Authentic Gainz for all</title>
 </head>
 
-<body>
+<body onload="startRotation()">
     <header>
         <!--#include virtual="common/document_logo.html"-->
         <!--#include virtual="common/document_mainmenu.html"-->
+        <script src="scripts/rotate.js"></script>
     </header>
     <main>
         <article id="text_left">
@@ -23,7 +24,7 @@
         </article>
     </main>
     <div id="image_right">
-        <img src="images/home_gym.jpg" alt="Home Gym" width="256" height="256">
+        <img id="placeholder" src="" alt="Home Gym" width="256" height="256">
     </div>
     <footer>
         <!--#include virtual="common/document_footer.html"-->
