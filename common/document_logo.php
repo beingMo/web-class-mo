@@ -17,7 +17,7 @@ var request = null;
 
 function getCurrentTime() {
     request = new XMLHttpRequest();
-    var url = "common/time.php";
+    var url = "scripts/time.php";
     request.open("GET", url, true);
     request.onreadystatechange = updatePage;
     request.send(null);
