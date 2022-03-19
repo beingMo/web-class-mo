@@ -135,7 +135,7 @@
                         <td><textarea name="mainComment" rows="6" cols="40"></textarea></td>
                     </tr>
                     <tr>
-                        <td><input type="button" onclick="validateContactForm()" value="Let Us Know!"></td>
+                        <td><input type="submit" onclick="validateContactForm()" value="Let Us Know!"></td>
                         <td class="rightAligned"><input type="reset" value="Start Over"></td>
                     </tr>
                 </table>

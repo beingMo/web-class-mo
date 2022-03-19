@@ -1,12 +1,12 @@
 <!-- catalog.html for authentic_gainz -->
-<?php include("../common/document_head.html")?>
+<?php include("../common/document_head.html");?>
 
 <title>Authentic Gainz - Cultivating Authentic Gainz for all</title>
 </head>
 
 <body>
     <header>
-        <?php <?php include("../common/document_logo.php")?> include("../common/document_mainmenu.html"); ?>
+        <?php include("../common/document_logo.php");?> <?php include("../common/document_mainmenu.html");?>
         <script src="scripts/orderform_validate.js"></script>
         <script src="scripts/process_order.js"></script>
     </header>
@@ -172,7 +172,7 @@
         </form>
     </main>
     <footer>
-        <?php include("../common/document_footer.html")?>
+        <?php include("../common/document_footer.html");?>
     </footer>
 </body>
 
