@@ -5,11 +5,9 @@
         </div>
         <div id="welcome">
             <h3>Welcome! </h3>
-            <h5> id-"datetime"><?php
-                echo "It's ".date ("1, F js")
-                . ". ebry"
-                echo "Our time is
-                ".date('g:ia').
+            <h5 id="datetime"><?php
+                echo "It's ".date ("1, F js"). ". <br>";
+                echo "Our time is ".date('g:ia').".";
                 ?></h5>
         </div>
         <script>
@@ -27,8 +25,7 @@ function getCurrentTime() {
 
 function updatePage() {
     if (request.readyState == 4) {
-        var dateDisplay
-        document.getElementById("datetime");
+        var dateDisplay = document.getElementById("datetime");
         dateDisplay.innerHTML = request.responseText;
     }
 }
