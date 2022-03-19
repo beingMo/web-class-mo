@@ -1,5 +1,5 @@
 <!-- products.html for authentic_gainz -->
-<!--#include virtual="../common/document_head.html"-->
+<?php include("../common/document_head.html")?>
 
 <title>Authentic Gainz - Cultivating Authentic Gainz for all</title>
 </head>

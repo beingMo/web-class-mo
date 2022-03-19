@@ -1,5 +1,5 @@
 <!-- sitemap.html for authentic_gainz -->
-<!--#include virtual="../common/document_head.html"-->
+<?php include("../common/document_head.html")?>
 
 <title>Authentic Gainz - Site Map</title>
 </head>
