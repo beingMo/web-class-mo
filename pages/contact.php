@@ -6,10 +6,10 @@
 
 <body>
     <header>
-        <?php 
-        <?php include("../common/document_logo.php")?>
-        include("../common/document_mainmenu.html");
-        ?>
+
+        <?php include("../common/document_logo.php");?>
+        <?php include("../common/document_mainmenu.html");?>
+
         <script src="scripts/contactform_validate.js"></script>
     </header>
     <main id="contact_page">
@@ -143,7 +143,7 @@
         </form>
     </main>
     <footer>
-        <?php include("../common/document_footer.html")?>
+        <?php include("../common/document_footer.html");?>
     </footer>
 </body>
 
