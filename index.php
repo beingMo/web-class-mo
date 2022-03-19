@@ -1,5 +1,5 @@
 <!-- index.html for authentic_gainz -->
-<?php include ("common/document head.html"): ?>
+<?php include ("common/document head.html"); ?>
 
 <title>Authentic Gainz - Cultivating Authentic Gainz for all</title>
 </head>
@@ -8,7 +8,7 @@
     <header>
         <?php
 include ("common/document_logo.html");
-include ("common/document_mainmenu.html")
+include ("common/document_mainmenu.html");
 ?>
         <script src="scripts/rotate.js"></script>
     </header>
