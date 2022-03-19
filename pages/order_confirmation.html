@@ -6,9 +6,8 @@
 
 <body onload="showSummary()">
     <header>
-        <!--#include virtual="../common/document_logo.html"-->
-        <!--#include virtual="../common/document_mainmenu.html"-->
-        
+        <?php <?php include("../common/document_logo.php")?> include("../common/document_mainmenu.html"); ?>
+
         <script>
             function showSummary() {
                 var priceColumn = sessionStorage.getItem("priceColumn");
@@ -37,7 +36,7 @@
         </table>
     </main>
     <footer>
-        <!--#include virtual="../common/document_footer.html"-->
+        <?php include("../common/document_footer.html")?>
     </footer>
 </body>
 
