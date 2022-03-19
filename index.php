@@ -7,7 +7,7 @@
 <body onload="startRotation()">
     <header>
         <?php
-include ("common/document_logo.html");
+include ("common/document_logo.php");
 include ("common/document_mainmenu.html");
 ?>
         <script src="scripts/rotate.js"></script>
