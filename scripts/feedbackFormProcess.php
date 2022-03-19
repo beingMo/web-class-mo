@@ -12,7 +12,6 @@ message of response from the user's input, and then
 $messageToBusiness = 
     "From: $_POST[firstName] $_POST[lastName]\r\n".
     "E-mail address: $_POST[email]\r\n".
-    "Phone number: $_POST[phone]\r\n".
     "Subject: Feedback\r\n".
     "$_POST[mainComment]\r\n";
 
