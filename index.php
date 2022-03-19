@@ -29,7 +29,7 @@ include ("common/document_mainmenu.html")
         <img id="placeholder" src="" alt="Home Gym" width="256" height="256">
     </div>
     <footer>
-        <?php include ("common/document_footer.html"): ?>
+        <?php include ("common/document_footer.html"); ?>
     </footer>
 </body>
 
