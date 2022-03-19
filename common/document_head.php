@@ -22,3 +22,26 @@ if (!isset($_SESSION['timedateRefreshCount']))
     <meta name="viewport" content="width=device-width">
     <base href="http://home.ite.sfcollege.edu/~maureen.auguste/index.html">
     <link rel="stylesheet" href="css/index.css">
+    <script>
+    //This script sets up the AJAX infrastructure for requesting
+    //date, time and random display color updates from the server.
+    var request = null;
+    function getCurrentTime()
+    {
+      request = new XMLHttpRequest();
+      var url = "time.php";
+      request.open("GET", url, true);
+      request.onreadystatechange = updatePage;
+      request.send(null);
+    }
+    function updatePage()
+    {
+        if (request.readyState == 4)
+        {
+            var dateDisplay = document.getElementById("datetime");
+            dateDisplay.innerHTML = request.responseText;
+            var hiddenParagraph = document.getElementById("colorChoice");
+            dateDisplay.style.color = hiddenParagraph.innerHTML;
+        }
+    }
+    </script>
