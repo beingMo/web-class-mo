@@ -54,7 +54,7 @@ echo $display;
 
 //Logs the message in data/feedback.txt on the web server
 //Note: directory "data" is at same level as directory "scripts"
-$fileVar = fopen("../data/feedback.txt", "a")
+$fileVar = fopen("http://home.ite.sfcollege.edu/~maureen.auguste/data/feedback.txt", "r")
     or die("Error: Could not open the log file.");
 fwrite($fileVar,
     "\n-------------------------------------------------------\n")
