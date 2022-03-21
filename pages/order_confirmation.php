@@ -9,22 +9,21 @@
         <?php include("../common/document_logo.php");?> <?php include("../common/document_mainmenu.html");?>
 
         <script>
-            function showSummary() {
-                var priceColumn = sessionStorage.getItem("priceColumn");
-                var titleColumn = sessionStorage.getItem("titleColumn");
-                var total = sessionStorage.getItem("total");
+        function showSummary() {
+            var priceColumn = sessionStorage.getItem("priceColumn");
+            var titleColumn = sessionStorage.getItem("titleColumn");
+            var total = sessionStorage.getItem("total");
 
-                console.log(priceColumn);
-                console.log(titleColumn);
-                document.getElementById("priceColumn").innerHTML = priceColumn + total;
-                document.getElementById("titleColumn").innerHTML = titleColumn + "Total: ";
+            console.log(priceColumn);
+            console.log(titleColumn);
+            document.getElementById("priceColumn").innerHTML = priceColumn + total;
+            document.getElementById("titleColumn").innerHTML = titleColumn + "Total: ";
 
-                sessionStorage.removeItem("priceColumn");
-                sessionStorage.removeItem("titleColumn");
-                sessionStorage.removeItem("total");
-                sessionStorage.clear();
-            }
-
+            sessionStorage.removeItem("priceColumn");
+            sessionStorage.removeItem("titleColumn");
+            sessionStorage.removeItem("total");
+            sessionStorage.clear();
+        }
         </script>
 
     </header>

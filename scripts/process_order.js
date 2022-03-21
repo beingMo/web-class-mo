@@ -126,12 +126,12 @@ function showSummary() {
     }
     //console.log(priceColumn);
     var total = calculateTotal();
-    
+
     sessionStorage.setItem("total", total);
     sessionStorage.setItem("priceColumn", priceColumn);
     sessionStorage.setItem("titleColumn", titleColumn);
 
-    location.href = "pages/order_confirmation";
+    location.href = "pages/order_confirmation.php";
     //document.getElementById("priceColumn").innerHTML = priceColumn;
     //document.getElementById("titleColumn").innerHTML = titleColumn;
 }
